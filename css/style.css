@@ -227,13 +227,13 @@ img {
     box-shadow: var(--outer-shadow);
     cursor: pointer;
     border-radius: 50%;
-    transition: all 0.3s ease;
     position:relative;
     z-index: 1;
 }
 
 .header .hamburger-btn:hover {
     box-shadow: var(--outer-shadow-0);
+    border: 1px solid var(--skin-color);
 }
 
 .header .hamburger-btn::after {
@@ -243,12 +243,12 @@ img {
     top: 0%;
     width: 100%;
     height: 100%;
-    transition: all 0.3s ease;
     border-radius: 50%;
 }
 
 .header .hamburger-btn:hover::after {
     box-shadow: var(--inner-shadow);
+    border: 1px solid var(--skin-color);
 }
 
 .header .hamburger-btn span {
@@ -322,6 +322,7 @@ img {
 
 .nav-menu .close-nav-menu:hover {
     box-shadow: var(--inner-shadow);
+    border: 1px solid var(--skin-color);
 }
 
 .nav-menu-inner {
@@ -345,6 +346,7 @@ img {
 
 .nav-menu ul li:hover {
     box-shadow: var(--inner-shadow);
+    border: 1px solid var(--skin-color);
 }
 
 .nav-menu ul li:last-child {
@@ -431,6 +433,7 @@ home-section .home-text .btn-1 {
 
 .home-section .home-text .more-link:hover {
     box-shadow: var(--inner-shadow);
+    border: 1px solid var(--skin-color);
 }
 
 /*--About Me--*/
@@ -464,4 +467,53 @@ home-section .home-text .btn-1 {
 
 .about-section .about-info .btn-1 {
     margin: 20px 20px 0 0;
+}
+
+.about-section .about-info .btn-1:hover {
+        border: 1px solid var(--skin-color);
+}
+
+/*--Portfolio--*/
+.portfolio-section {
+    padding: 80px 0 80px;
+    min-height: 100vh;
+}
+
+.portfolio-section .section-title {
+    margin-bottom: 40px;
+}
+
+.portfolio-section .portfolio-filter {
+    padding: 0 15px;
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align: center;
+}
+
+.portfolio-filter .filter-item {
+    display: inline-block;
+    margin: 0 5px 10px;
+    padding: 5px 10px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: 500;
+    color: var(--text-black-600);
+    font-size: 16px;
+}
+
+[data-target="github"] {
+    box-shadow: var(--outer-shadow);
+}
+
+.portfolio-filter .filter-item:active {
+    color: var(--skin-color);
+}
+
+[data-target="github"]:hover {
+    box-shadow: var(--inner-shadow);
+    border: 1px solid var(--skin-color);
+}
+
+.portfolio-item-img {
+    max-width: 500px;
 }
