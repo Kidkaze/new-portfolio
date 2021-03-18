@@ -28,16 +28,16 @@
         <div class="close-nav-menu">&times;</div>
         <div class="nav-menu-inner">
             <ul>
-                <li><a href="#" class="inner-shadow active">Home</a></li>
-                <li><a href="#" class="outer-shadow hover-in-shadow">About</a></li>
-                <li><a href="#" class="outer-shadow hover-in-shadow">Portfolio</a></li>
-                <li><a href="#" class="outer-shadow hover-in-shadow">Contact</a></li>
+                <li><a href="#home" class="link-item inner-shadow active">Home</a></li>
+                <li><a href="#about" class="link-item outer-shadow hover-in-shadow">About</a></li>
+                <li><a href="#portfolio" class="link-item outer-shadow hover-in-shadow">Portfolio</a></li>
             </ul>
         </div>
     </nav>
+    <div class="fade-out-effect"></div>
     <!-- Nav End -->
     <!-- Home -->
-    <section class="home-section section">
+    <section class="home-section section active" id="home">
         <!-- Wrap -->
         <div class="effect-wrap">
             <div class="effect effect-1"></div>
@@ -57,7 +57,7 @@
                     <p>Hey</p>
                     <h2>I'm Tobi</h2>
                     <h1>Front End Developer</h1>
-                    <a href="#" class=" btn-1 more-link">More about me</a>
+                    <a href="#about" class="link-item btn-1 more-link">More about me</a>
                 </div>
                 <div class="home-img ">
                     <div class="img-box">
@@ -69,7 +69,7 @@
     </section>
     <!-- Home End -->
     <!-- About -->
-    <section class="about-section section">
+    <section class="about-section section" id="about">
         <div class="container">
             <div class="row">
                 <div class="section-title">
@@ -101,13 +101,14 @@
                         I love terrible jokes and puns and have an entire arsenal of them, be warned!
                     </p>
                     <a href="code cv.pdf" target="_blank" class="btn-1 button-press">My CV</a>
+                    <a href="#portfolio"class="link-item btn-1 button-press">My Work</a>
                 </div>
             </div>
         </div>
     </section>
     <!-- About End -->
     <!-- Portfolio -->
-    <section class="portfolio-section section">
+    <section class="portfolio-section section" id="portfolio">
         <div class="container">
             <div class="row">
                 <div class="section-title">
@@ -117,10 +118,10 @@
             <!-- Portfolio filter -->
             <div class="row">
                 <div class="portfolio-filter">
-                    <span class="filter-item active" data-target="github">Github</span>
-                    <span class="filter-item" data-target="travel-site">Travel Site</span>
-                    <span class="filter-item" data-target="etch-a-sketch">Etch a Sketch</span>
-                    <span class="filter-item" data-target="virtual-library">Virtual Library</span>
+                    <span class="filter-item active" data-target="github"><a href="https://github.com/Kidkaze" class="outside-link-pink" target="_blank">Github</a></span>
+                    <span class="filter-item" data-target="travel-site"><a href="https://kidkaze.github.io/materialize-website/" class="outside-link-grey" target="_blank">Travel Site</a></span>
+                    <span class="filter-item" data-target="etch-a-sketch"><a href="https://kidkaze.github.io/etch-a-sketch/" class="outside-link-grey" target="_blank">Etch a Sketch</a></span>
+                    <span class="filter-item" data-target="virtual-library"><a href="https://kidkaze.github.io/library/" class="outside-link-grey" target="_blank">Virtual Library</a></span>
                 </div>
             </div>
             <!-- Portfolio Filter End -->
@@ -132,7 +133,7 @@
                         <div class="portfolio-item-img">
                             <img src="images/travellite.png" alt="Travellite Travel Website">
                             <!-- View project Button -->
-                            <span class="view-project">view project</span>
+                            <span class="view-project"><a href="https://kidkaze.github.io/materialize-website/" target="_blank" class="outside-link-pink">view project</a></span>
                         </div>
                         <p class="portfolio-item-title">Travellite Travel Website</p>
                         <!-- Project Details -->
@@ -154,7 +155,7 @@
                         <div class="portfolio-item-img">
                             <img src="images/etch-a-sketch.png" alt="Simple Etch A Sketch">
                             <!-- View project Button -->
-                            <span class="view-project">view project</span>
+                            <span class="view-project"><a href="https://kidkaze.github.io/etch-a-sketch/" target="_blank" class="outside-link-pink">view project</a></span>
                         </div>
                         <p class="portfolio-item-title">Etch a Sketch</p>
                         <!-- Project Details -->
@@ -176,7 +177,7 @@
                         <div class="portfolio-item-img">
                             <img src="images/library.png" alt="Virtual Library">
                             <!-- View project Button -->
-                            <span class="view-project">view project</span>
+                            <span class="view-project"><a href="https://kidkaze.github.io/library/" target="_blank" class="outside-link-pink">view project</a></span>
                         </div>
                         <p class="portfolio-item-title">Virtual Library</p>
                         <!-- Project Details -->
